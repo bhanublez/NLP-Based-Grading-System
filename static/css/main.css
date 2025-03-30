@@ -1,0 +1,37 @@
+.card {
+  margin-bottom: 2rem;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-header {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.progress {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.list-group-item-success {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.list-group-item-danger {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.rounded {
+  border-radius: 10px !important;
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}

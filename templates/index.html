@@ -1,0 +1,37 @@
+{% extends "base.html" %} {% block content %}
+<div class="card shadow-lg">
+  <div class="card-header bg-primary text-white">
+    <h4 class="mb-0">Grade Submission Portal</h4>
+  </div>
+  <div class="card-body">
+    <form method="POST" enctype="multipart/form-data">
+      <div class="mb-4">
+        <label class="form-label h5">Upload Answer Sheet</label>
+        <input
+          type="file"
+          class="form-control"
+          name="file"
+          accept="image/*"
+          required />
+        <div class="form-text">Supported formats: JPEG, PNG</div>
+      </div>
+
+      <div class="mb-4">
+        <label class="form-label h5">Reference Answer</label>
+        <textarea
+          class="form-control"
+          name="reference"
+          rows="4"
+          required></textarea>
+        <div class="form-text">Enter the model answer for comparison</div>
+      </div>
+
+      <div class="d-grid gap-2">
+        <button type="submit" class="btn btn-primary btn-lg">
+          <i class="bi bi-cloud-upload me-2"></i>Submit for Grading
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}
